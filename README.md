@@ -5,7 +5,7 @@
 
 ### Primero crear nuestra función que ordenará el arreglo dado como entrada
 
-``` 
+``` java
    public static void sort(int[] arr) {
 ```
 
