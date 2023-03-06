@@ -1,6 +1,6 @@
 # CountingSortPractice
  
-### Before the practice make sure that the maven JDK and your local JDK are the same!
+### Ahora toca practicar!!
 ![Practice](https://user-images.githubusercontent.com/97609743/223197070-5b2a0730-85b3-4c22-a231-2a80ae5da015.png)
 
 ### Primero crear nuestra función que ordenará el arreglo dado como entrada
