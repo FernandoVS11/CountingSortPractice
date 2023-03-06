@@ -123,7 +123,7 @@ public class CountingSort {
     }
 }
 ```
-## Para hacer un código que en vez de ordenar números ordene caracteres, le dejo el código a continuación:
+## Si quieres que el código en vez de ordenar números ordene caracteres se usa el siguiente código:
 ```java
 // Java implementation of Counting Sort
 
