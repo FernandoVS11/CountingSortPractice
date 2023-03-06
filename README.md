@@ -11,13 +11,13 @@
 
 ### Luego necesitamos encontrar el valor máximo posible de nuestro arreglo
 
-``` 
+``` java
     int maxVal = getMaxValue(arr);
 ```
 
 ### Para ello crearemos una función que nos ayude a hacerlo
 
-``` 
+``` java
     private static int getMaxValue(int[] arr) {
         int maxVal = arr[0];
         for (int i = 1; i < arr.length; i++) {
@@ -32,7 +32,7 @@
 
 ### Ahora crearemos dos arreglos de números, uno sera el que cuenta y otro será el que se ordene. Como pueden ver el arreglo que cuenta, su tamaño será uno más que el valoe máximo que se encuentra en el arreglo dado a ordenar.
 
-``` 
+```java 
     int[] counts = new int[maxVal + 1];
     int[] sortedArr = new int[arr.length];
 
@@ -40,7 +40,7 @@
 
 ### Ahora crearemos un ciclo for donde llenamos nuestro arreglo que cuenta
 
-```         
+``` java
         for (int i = 0; i < arr.length; i++) {
             counts[arr[i]]++;
         }
@@ -48,14 +48,14 @@
 
 ### Luego creamos otro ciclo for que modifica el arreglo de conteo haciendo que cada elemento de cada índice almacene la suma de los recuentos anteriores. El array de conteo modificaado indica la posición de cada objeto en la secuencia de salida.
 
-``` 
+``` java 
         for (int i = 1; i < counts.length; i++) {
             counts[i] += counts[i - 1];
         }
 ```
 ### Después creamos otro ciclo for con el cual vamos a hacer el ordenamiento.
 
-``` 
+``` java
         for (int i = arr.length - 1; i >= 0; i--) {
             sortedArr[counts[arr[i]] - 1] = arr[i];
             counts[arr[i]]--;
@@ -64,13 +64,13 @@
 
 ### Acto seguidi copiamos el arreglo ordenado con el arreglo dado como entrada.
 
-``` 
+``` java 
     System.arraycopy(sortedArr, 0, arr, 0, arr.length);
 ```
 
 ### Finalmente creamos el main donde se pondrá el arreglo de entrada, se llame a la función de arreglo y se imprima
 
-``` 
+```  java
     public static void main(String[] args) {
         int[] arr = {3, 2, 4, 1, 5};
         CountingSort.sort(arr);
@@ -80,7 +80,8 @@
 
 ## Este debería ser le resultado:
 
-``` import java.util.Arrays;
+```  java
+import java.util.Arrays;
 
 public class CountingSort {
     
