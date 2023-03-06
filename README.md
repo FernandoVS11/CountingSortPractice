@@ -186,10 +186,10 @@ class CountingSort {
 
 ```
 ## Si quieres saber más sobre todo esto te dejo está página web
-```link
+```
  https://www.geeksforgeeks.org/counting-sort/
 ```
 ##  y este video
-```link
- [https://www.geeksforgeeks.org/counting-sort/](https://www.youtube.com/watch?v=7zuGmKfUt7s&ab_channel=GeeksforGeeks)
+```
+ https://www.youtube.com/watch?v=7zuGmKfUt7s&ab_channel=GeeksforGeeks
 ```
