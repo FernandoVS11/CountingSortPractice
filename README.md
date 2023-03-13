@@ -56,8 +56,8 @@
 ### Después creamos otro ciclo for con el cual vamos a hacer el ordenamiento.
 
 ``` java
-        for (int i = arr.length - 1; i >= 0; i--) {
-            sortedArr[counts[arr[i]] - 1] = arr[i];
+        for (int i = 0; i <= arr.length- 1; i++) {
+            sortedArr[counts[arr[i]]-1] = arr[i];
             counts[arr[i]]--;
         }
 ```
@@ -72,7 +72,7 @@
 
 ```  java
     public static void main(String[] args) {
-        int[] arr = {3, 2, 4, 1, 5};
+        int[] arr = {1,4,1,2,7,5,2};
         CountingSort.sort(arr);
         System.out.println(Arrays.toString(arr));
     }
